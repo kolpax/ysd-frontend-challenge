@@ -1,0 +1,8 @@
+@import '~@youseedk/dna/scss/ys-colors';
+
+.user-profile-picture {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border: 8px solid $ys-color-digital-moss;
+}

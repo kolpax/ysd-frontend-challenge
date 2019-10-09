@@ -1,0 +1,44 @@
+@import '~@youseedk/dna/scss/ys-colors';
+
+.user-details {
+  background-color: #fff;
+  padding: 16px;
+  min-height: 100vh;
+}
+
+.user-details__header {
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-details__header-titles {
+  margin: 32px;
+}
+
+.user-details_info-section {
+  margin: 32px;
+}
+
+.info {
+  margin-bottom: 16px;
+}
+
+.info__label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  line-height: 10px;
+  color: #a2a2a2;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 700;
+}
+
+.info__value {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #484848;
+  padding: 12px 24px;
+}

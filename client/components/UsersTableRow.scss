@@ -1,0 +1,9 @@
+@import '~@youseedk/dna/scss/ys-colors';
+
+.users-table-row:hover {
+  background-color: $ys-color-grey-98;
+}
+
+.users-table-row--selected {
+  background-color: $ys-color-grey-94;
+}

@@ -1,0 +1,64 @@
+@import '~@youseedk/dna/scss/ys-settings';
+
+.users-page {
+  display: flex;
+}
+
+.users-page__user-details {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 220ms ease;
+}
+
+.users-page__user-details--show {
+  pointer-events: all;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.users-page__dismiss {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 8px;
+  width: 44px;
+  height: 44px;
+}
+
+.users-page__seperator {
+  display: none;
+  width: 1px;
+  background-color: black;
+}
+
+.users-page__users-table {
+  flex: 1;
+  overflow-x: auto;
+}
+
+.users-page__user-details {
+  flex: 1;
+}
+
+@media screen and (min-width: $ys-breakpoint-lg) {
+  .users-page__user-details {
+    position: relative;
+    pointer-events: all;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .users-page__dismiss {
+    display: none;
+  }
+
+  .users-page__seperator {
+    display: block;
+  }
+}

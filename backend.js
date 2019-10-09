@@ -10,6 +10,11 @@ function randomWait() {
   return Math.floor(Math.random() * 10000) + 500;
 }
 
+backend.use((_req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 backend.get('/api/users', (req, res) => {
   fs.readFile(path.resolve(__dirname, 'users.json'), 'utf8', (err, data) => {
     setTimeout(() => {
