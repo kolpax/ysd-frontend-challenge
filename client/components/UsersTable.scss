@@ -1,10 +1,22 @@
+@import '~@youseedk/dna/scss/ys-settings';
+
 .users-table {
   padding: 16px;
   box-sizing: border-box;
-  min-height: 100vh;
+  flex: 1;
 }
 
 .users-table td {
   white-space: nowrap;
   padding: 8px;
+}
+
+@media screen and (min-width: $ys-breakpoint-md) {
+  .users-table {
+    padding: 32px;
+  }
+
+  .users-table td {
+    padding: 16px;
+  }
 }

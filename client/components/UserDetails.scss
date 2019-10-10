@@ -1,24 +1,75 @@
 @import '~@youseedk/dna/scss/ys-colors';
+@import '~@youseedk/dna/scss/ys-settings';
 
 .user-details {
-  background-color: #fff;
-  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: $ys-color-white;
   min-height: 100vh;
 }
 
 .user-details__header {
   height: 280px;
+  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.user-details__header-spacer {
+  flex: 1;
+}
+
+.user-details__header-arrow {
+  width: 40px;
+  height: 40px;
+}
+
 .user-details__header-titles {
-  margin: 32px;
+  margin: 16px;
+  overflow: hidden;
+}
+
+.user-details__header-titles .ys-primary-title,
+.user-details__header-titles .ys-subtitle {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.user-details__header-title-placeholder {
+  width: 340px;
+  height: 42px;
+  background-color: $ys-color-grey-94;
+  margin-bottom: 16px;
+}
+
+.user-details__header-subtitle-placeholder {
+  width: 220px;
+  height: 34px;
+  background-color: $ys-color-grey-94;
+}
+
+.user-details_main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: $ys-color-grey-94;
+  padding: 16px 32px;
 }
 
 .user-details_info-section {
-  margin: 32px;
+  background-color: $ys-color-white;
+  padding: 16px;
+}
+
+.user-details_info-section--placeholder {
+  flex: 1;
+  background-color: $ys-color-grey-98;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $ys-color-grey-64;
 }
 
 .info {
@@ -29,7 +80,7 @@
   font-size: 10px;
   letter-spacing: 2px;
   line-height: 10px;
-  color: #a2a2a2;
+  color: $ys-color-grey-64;
   text-transform: uppercase;
   margin: 0;
   font-weight: 700;
@@ -39,6 +90,19 @@
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5rem;
-  color: #484848;
+  color: $ys-color-grey-28;
   padding: 12px 24px;
+}
+
+.user-details_map {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: $ys-breakpoint-md) {
+  .user-details__header-titles {
+    margin: 32px;
+  }
 }

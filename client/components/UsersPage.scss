@@ -2,6 +2,14 @@
 
 .users-page {
   display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.users-page__main {
+  display: flex;
+  flex: 1;
 }
 
 .users-page__user-details {
@@ -46,12 +54,13 @@
   flex: 1;
 }
 
-@media screen and (min-width: $ys-breakpoint-lg) {
+@media screen and (min-width: $ys-breakpoint-xl) {
   .users-page__user-details {
-    position: relative;
+    position: initial;
     pointer-events: all;
     opacity: 1;
     transform: scale(1);
+    min-width: 800px;
   }
 
   .users-page__dismiss {

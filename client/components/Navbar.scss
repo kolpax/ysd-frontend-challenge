@@ -1,0 +1,15 @@
+@import '~@youseedk/dna/scss/ys-colors';
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex: 0 0 72px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: $ys-color-midnight-green;
+  padding: 0 16px;
+}
+
+.navbar__logo {
+  color: $ys-color-white;
+  width: 105px;
+}

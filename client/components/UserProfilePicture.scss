@@ -1,8 +1,14 @@
 @import '~@youseedk/dna/scss/ys-colors';
 
 .user-profile-picture {
+  flex: 0 0 auto;
   width: 175px;
   height: 175px;
   border-radius: 50%;
   border: 8px solid $ys-color-digital-moss;
+}
+
+.user-profile-picture--placeholder {
+  background-color: $ys-color-grey-94;
+  border: 8px solid $ys-color-grey-94;
 }

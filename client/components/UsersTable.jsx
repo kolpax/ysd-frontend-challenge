@@ -1,17 +1,11 @@
 import React from 'react';
-import useFetch from '../hooks/useFetch';
 import cx from 'classnames';
 
 import UsersTableRow from './UsersTableRow.jsx';
 
 import './UsersTable.scss';
 
-const UsersTable = ({ className, selectedUserId, onSelectUser }) => {
-  const { data: users, loading } = useFetch('http://localhost:3000/api/users');
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+const UsersTable = ({ className, users, selectedUserId, onSelectUser }) => {
 
   return (
     <div className={cx('users-table', className)}>
